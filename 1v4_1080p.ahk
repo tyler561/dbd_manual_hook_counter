@@ -19,18 +19,18 @@ SysGet, ScreenHeight, 1  ; Retrieves the height of the primary monitor
 
 ; Calculate X and Y position for the GUI based on the screen resolution
 GuiX := ScreenWidth * 0.00005  ; 2.6% of screen width
-GuiY := ScreenHeight * 0.42  ; 44.4% of screen height
+GuiY := ScreenHeight * 0.44  ; 44.4% of screen height
 
 CustomColor = EEAA99
 Gui +LastFound +AlwaysOnTop -Caption +ToolWindow
 Gui, Color, %CustomColor%
-Gui, Font, s32, verdana
+Gui, Font, s16, verdana
 
 yPos := 0  ; Initialize y-position variable
-xPos := 50  ; Set a fixed x-position
+xPos := 134  ; Set a fixed x-position
 Loop, 4 {
     Gui, Add, Text, x%xPos% y%yPos% vnum%A_Index% cFFD166 BackGroundTrans
-    yPos += 90  ; Increase y-position by 120 for each new line
+    yPos += 88  ; Increase y-position by 120 for each new line
 }
 
 WinSet, TransColor, %CustomColor% 255
@@ -38,7 +38,7 @@ SetTimer, UpdateOSD, 200
 Gosub, UpdateOSD
 
 ; Use calculated position for GUI
-Gui, Show, x%GuiX% y%GuiY% w120 h450 NoActivate
+Gui, Show, x%GuiX% y%GuiY% w200 h450 NoActivate
 return
 
 UpdateOSD:
