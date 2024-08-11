@@ -38,7 +38,7 @@ SetTimer, UpdateOSD, 200
 Gosub, UpdateOSD
 
 ; Use calculated position for GUI
-Gui, Show, x%GuiX% y%GuiY% w200 h450 NoActivate
+Gui, Show, x%GuiX% y%GuiY% w160 h450 NoActivate
 return
 
 UpdateOSD:
