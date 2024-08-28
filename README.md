@@ -15,18 +15,26 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-The script writes and reads to C:\temp\hook.ini file to display the values. Once loaded the GUI should align properly (relatively, I tried) to the survivor's portraits, use the following hotkeys for interactions with the GUI. The counter goes up to 3 and after 3 it will reset back to 0. 
+The script writes and reads to ``C:\temp\hook.ini`` file to display the values. Once loaded the GUI should align relatively (I tried) to the survivor's portraits. After hooking a survivor simply hit the numbers 1, 2, 3, or 4 to increase the hook counter value next to the survivor portrait that was just hooked. Use the following hotkeys below for additional interactions with the GUI. The counter goes up to 3 and after 3 it will reset back to 0 or you can use the hotkey ``CTRL + 0`` to reset the values. 
 
-I've used this for 2-3 hours for about 2 months now and have not been banned but I bear no responsibility for the repercussions using this script. Test it out on a different account or have someone test it for you if you're unsure.
+I've used this for 2-3 hours for about 2 months now and have not been banned but I bear no responsibility for using this script. Test it out on a different account or have someone test it for you if you're unsure.
 
 Hotkeys:
-* 1 - add a hook state to the first survivor
-* 2 - add a hook state to the second survivor
-* 3 - add a hook state to the third survivor
-* 4 - add a hook state to the fourth survivor
-* LShift + 1 = subtract a hook state to the first survivor (corresponding numbers 1-4 will subract from other survivor values)
-* CTRL + 0 - reload script (will reset hook state values)
-* CTRL + = - show/hide the GUI (in case it's covering something up that you want to show)
+* ``1`` - add a hook state to the first survivor
+* ``2`` - add a hook state to the second survivor
+* ``3`` - add a hook state to the third survivor
+* ``4`` - add a hook state to the fourth survivor
+* ``LShift + 1`` = subtract a hook state to the first survivor (corresponding numbers 1-4 will subract from other survivor values)
+* ``CTRL + 0`` - reload script (will reset hook state values)
+* ``CTRL + =`` - show/hide the GUI (in case it's covering something up that you want to show)
+
+Sample images:
+1v4_1080p_smallUI.ahk
+![1v_4_1080p_smallUI](https://github.com/user-attachments/assets/777cae6c-73bf-47ed-b192-a4a7bc94110b)
+
+1v4_1080p_defaultUI.ahk
+![1v_4_1080p_defaultUI](https://github.com/user-attachments/assets/ad1d8079-8aa7-4db8-9195-e711129ac1c5)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- KNOWN ISSUES -->
