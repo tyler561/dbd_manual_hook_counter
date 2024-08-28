@@ -68,6 +68,15 @@ return
 ~^0::Reload
 +ESC::ExitApp
 
+;;Toggle GUI using CTRL = hotkey combination
+~^=::
+toggle := !toggle
+If toggle
+	Gui, Show, w140 h450
+else
+	Gui, hide
+return
+
 ; Functions
 Increment(key) {
     UpdateIniFile(key, 1)
