@@ -27,7 +27,7 @@ Gui, Color, %CustomColor%
 Gui, Font, s12, verdana
 
 yPos := 0  ; Initialize y-position variable
-xPos := 115  ; Set a fixed x-position
+xPos := 120  ; Set a fixed x-position
 Loop, 4 {
     Gui, Add, Text, x%xPos% y%yPos% vnum%A_Index% cFFD166 BackGroundTrans
     yPos += 59  ; Increase y-position by 120 for each new line
